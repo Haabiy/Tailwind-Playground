@@ -42,5 +42,3 @@ To compile Tailwind CSS and watch for changes, run the following command:
 ```bash
 npm run dev
 ```
-
-For more information and examples, check out the [Tailwind-Starter-Reference](https://github.com/phithounsavanh/Tailwind-starter).
