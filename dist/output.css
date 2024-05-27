@@ -1045,6 +1045,14 @@ html {
     position: relative;
   }
 
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .xl\:row-start-1 {
+    grid-row-start: 1;
+  }
+
   .xl\:-mt-5 {
     margin-top: -1.25rem;
   }
