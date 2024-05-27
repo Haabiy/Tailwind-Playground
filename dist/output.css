@@ -989,10 +989,6 @@ html {
     grid-row-start: 1;
   }
 
-  .lg\:-m-32 {
-    margin: -8rem;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -1032,7 +1028,7 @@ html {
   }
 }
 
-@media (min-width: 1545px) {
+@media (min-width: 1440px) {
   .xl\:relative {
     position: relative;
   }
