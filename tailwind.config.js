@@ -7,7 +7,7 @@ module.exports = {
       md: '768px',
       lg: '976px',
       xl: '1440px',
-      xxl: '1800px'
+      xxl: '1550px'
     },
     extend: {
       fontFamily : {
