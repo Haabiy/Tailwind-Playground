@@ -6,37 +6,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <script src="../dist/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./output.css">
-    <title>LoopStudio</title>
+    <title>TailWind-PlayGround</title>
 </head>
 <body>
     <!--Hero section-->
-    <section id="hero" class="h-96 md:h-hero">
+    <section id="hero" class="h-hero">
         <div class="flex lg:gap-96">
-            <div class="m-16"><img src="../images/logo.svg" alt=""></div>
+            <div class="m-16"><img src="./images/logo.svg" alt=""></div>
             <div class="hidden xl:flex gap-16 absolute right-24 m-16 text-xl text-white">
-                <div class="">ABOUT</div>
-                <div class="">CAREERS</div>
-                <div class="">EVENTS</div>
-                <div class="">PRODUCTS</div>
-                <div class="">SUPPORT</div>
+                <div class="#ABOUT">ABOUT</div>
+                <div class="#CAREERS">CAREERS</div>
+                <div class="#EVENTS">EVENTS</div>
+                <div class="#PRODUCTS">PRODUCTS</div>
+                <div class="#SUPPORT">SUPPORT</div>
             </div>
         </div>
-        <div class="text-white text-5xl font-alata m-16">Impressive experiences that deliver</div>
-    </section>
-    <!-- Mobile Menu -->
-    <div class="menu text-white text-xl" id="menu">
-        <a href="#ABOUT">ABOUT</a>
-        <a href="#CAREERS">CAREERS</a>
-        <a href="#EVENTS">EVENTS</a>
-        <a href="#PRODUCTS">PRODUCTS</a>
-        <a href="#SUPPORT">SUPPORT</a>
+
+    <!-- Hamburger Button -->
+    <div class="absolute top-0 right-0 m-16 xl:hidden">
+    <button id="menu-btn" type="button" class="z-40 block hamburger xl:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
     </div>
 
-    <section id="#ABOUT">
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden absolute top-0 self-end min-w-full min-h-screen gap-3 text-lg text-white flex-col uppercase bg-black">
+        <div class="flex flex-col gap-3 absolute top-0 m-20">
+            <a href="#About" class="hover:text-pink-500">About</a>
+            <a href="#Careers" class="hover:text-pink-500">Careers</a>
+            <a href="#Events" class="hover:text-pink-500">Events</a>
+            <a href="#Products" class="hover:text-pink-500">Products</a>
+            <a href="#Support" class="hover:text-pink-500">Support</a>
+        </div>
+    </div>
+
+        <div class="text-white text-5xl font-alata m-16">Impressive experiences that deliver</div>
+    </section>
+
+<!-- Mobile Menu -->
+    <section id="#">
         <div class="flex flex-col md:flex-row lg:flex-row">
-            <div class="pt-4 md:p-8"><img src="../images/mobile/image-interactive.jpg" alt="" class="md:w-imagex"></div>
+            <div class="pt-4 md:p-8"><img src="./images/mobile/image-interactive.jpg" alt="" class="md:w-imagex"></div>
             <div class="md:flex-col lg:flex-col">
             <div class="text-slate-900 text-center p-8 text-2xl md:text-4xl">The LEADER IN INTERACTIVE VR</div>
             <div class="text-center px-8 font-sans lg:text-2xl xl:text-3xl">
@@ -48,22 +63,262 @@
         </div>
         </div>
     </section>
-    <section>
+    <section id="Events">
         <div class="pt-12 text-center text-2xl lg:text-5xl">OUR CREATIONS</div>
         <div class="flex flex-col gap-3 p-4 justify-center items-center lg:grid lg:grid-cols-4">
-            <div><img src="../images/mobile/image-deep-earth.jpg" alt=""></div>
-            <div><img src="../images/mobile/image-night-arcade.jpg" alt=""></div>
-            <div><img src="../images/mobile/image-soccer-team.jpg" alt=""></div>
-            <div><img src="../images/mobile/image-grid.jpg" alt=""></div>
-            <div><img src="../images/mobile/image-from-above.jpg" alt=""></div>
-            <div><img src="../images/mobile/image-pocket-borealis.jpg" alt=""></div>
-            <div><img src="../images/mobile/image-curiosity.jpg" alt=""></div>
-            <div><img src="../images/mobile/image-fisheye.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-deep-earth.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-night-arcade.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-soccer-team.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-grid.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-from-above.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-pocket-borealis.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-curiosity.jpg" alt=""></div>
+            <div><img src="./images/mobile/image-fisheye.jpg" alt=""></div>
         </div>
     </section>
-    <footer class="bg-slate-800 m-4">
+    <section class="xl:grid xl:grid-cols-3 xl:grid-rows-2 xxl:grid xxl:grid-cols-3 xxl:grid-rows-2">
+        <section class="xl:col-span-2 xl:row-span-1 xxl:col-span-2 xxl:row-span-1">
+            <div class="bg-purple-700 flex flex-col justify-start items-start m-4 rounded-2xl min-h-96">
+                <div class="flex flex-col">
+                    <div class="flex flex-row">
+                        <div class="m-10"><img src="./images/image-daniel.jpg" alt="" class="rounded-full"></div>
+                        <div class="flex flex-col">
+                            <div class="relative m-10 right-16 text-white">Daniel Clifford</div>
+                            <div class="relative right-6 bottom-10 text-white font-thin">Verified Graduate</div>
+                        </div>
+                    </div>
+                <div class="text-white mt-16 mr-12 ml-12 relative bottom-20 text-lg font-sans">
+                    I received a job offer mid-course, and the subjects I learned were
+                    current, if not more so, in the company I joined. I honestly feel I
+                    got every penny's worth.
+                </div>
+
+                <div class="text-white mt-24 mr-12 ml-12 -mb-20 relative bottom-36 font-thin font-alata">
+    
+                    "I was an EMT for many years before I joined the bootcamp. I've been
+                    looking to make a transition and have heard some people who had an
+                    amazing experience here. I signed up for the free intro course and
+                    found it incredibly fun! I enrolled shortly thereafter. The next 12
+                    weeks was the best - and most grueling - time of my life. Since
+                    completing the course, I've successfully switched careers, working
+                    as a Software Engineer at a VR startup. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Ratione vero repudiandae, quasi atque
+                    officiis eum consectetur odio amet dolorem deleniti repellat
+                    expedita aut sunt laudantium cum itaque nam voluptatum quod! Quo
+                    totam sequi omnis deserunt? Sit nam molestiae excepturi,
+                    perspiciatis labore deleniti eum, eligendi quisquam quod sed nobis
+                    exercitationem tempora! "
+    
+                </div> 
+                </div>
+            </div>
+        </section>
+        <section class="xl:col-span-2 xl:row-start-2 xxl:col-span-2 xxl:row-start-2">
+            <div class="bg-gray-600 flex flex-col justify-start items-start m-4 rounded-2xl min-h-96">
+                <div class="flex flex-col">
+                    <div class="flex flex-row">
+                        <div class="m-10"><img src="./images/image-jonathan.jpg" alt="" class="rounded-full"></div>
+                        <div class="flex flex-col">
+                            <div class="relative m-10 right-16 text-white">Jonathan Walters</div>
+                            <div class="relative right-6 bottom-10 text-white font-thin">Verified Graduate</div>
+                        </div>
+                    </div>
+                <div class="text-white mt-16 mr-12 ml-12 relative bottom-20 text-lg font-sans">
+    
+                    The team was very supportive and kept me motivated
+              
+                </div>
+    
+                <div class="text-white mt-24 mr-12 ml-12 -mb-20 relative bottom-36 font-thin font-alata">
+    
+                    "I started as a total newbie with virtually no coding skills. I now
+                    work as a mobile engineer for a big company. This was one of the
+                    best investments I've made in myself. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Atque ipsam veritatis natus illum
+                    ullam ab, nesciunt rerum nobis, quibusdam ad voluptatum rem
+                    necessitatibus facere nihil deleniti assumenda vel velit neque quia,
+                    nisi ipsum laudantium impedit eveniet iste. Pariatur, exercitationem
+                    consequuntur praesentium a est eum velit quos maiores ipsum facere
+                    tempora! "
+                  
+                </div> 
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="bg-pink-500 flex flex-col justify-start items-start m-4 rounded-2xl min-h-96">
+                <div class="flex flex-col">
+                    <div class="flex flex-row">
+                        <div class="m-10"><img src="./images/image-jeanette.jpg" alt="" class="rounded-full"></div>
+                        <div class="flex flex-col">
+                            <div class="relative m-10 right-16 text-white">Jeanette Harmon</div>
+                            <div class="relative right-6 bottom-10 text-white font-thin">Verified Graduate</div>
+                        </div>
+                    </div>
+                <div class="text-white mt-16 mr-12 ml-12 relative bottom-20 text-lg font-sans">
+    
+                    An overall wonderful and rewarding experience
+                        
+                </div>
+    
+                <div class="text-white mt-24 mr-12 ml-12 -mb-20 relative bottom-36 font-thin font-alata">
+    
+                    "Thank you for the wonderful experience! I now have a job I really
+                    enjoy, and make a good living while doing something I love."
+                  
+                </div> 
+                </div>
+            </div>
+        </section>
+    
+        <section class="xl:col-span-1 xl:row-start-1 xxl:col-span-1 xxl:row-start-1">
+            <div class="bg-slate-500 flex flex-col justify-start items-start m-2 rounded-2xl min-h-96">
+                <div class="flex flex-col">
+                    <div class="flex flex-row">
+                        <div class="m-10"><img src="./images/image-patrick.jpg" alt="" class="rounded-full"></div>
+                        <div class="flex flex-col">
+                            <div class="relative m-10 right-16 text-white">Patrick Abrams</div>
+                            <div class="relative right-6 bottom-10 text-white font-thin">Verified Graduate</div>
+                        </div>
+                    </div>
+                <div class="text-white mt-16 mr-12 ml-12 relative bottom-20 text-lg font-sans">
+    
+    
+                    Awesome teaching support from TAs who did the bootcamp themselves.
+                    Getting guidance from them and learning from their experiences was
+                    easy.
+                                      
+                </div>
+    
+                <div class="text-white mt-24 mr-12 ml-12 -mb-20 relative bottom-36 font-thin font-alata">
+    
+                    "The staff seem genuinely concerned about my progress which I find
+                    really refreshing. The program gave me the confidence necessary to
+                    be able to go out in the world and present myself as a capable
+                    junior developer. The standard is above the rest. You will get the
+                    personal attention you need from an incredible community of smart
+                    and amazing people."
+                  
+                </div> 
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="bg-green-500 flex flex-col justify-start items-start m-4 rounded-2xl min-h-96 xl:relative xl:ml-4 xl:mr-4 xl:-mt-24 xxl:relative xxl:ml-4 xxl:mr-4 xxl:-mt-5">
+                <div class="flex flex-col">
+                    <div class="flex flex-row">
+                        <div class="m-10"><img src="./images/image-kira.jpg" alt="" class="rounded-full"></div>
+                        <div class="flex flex-col">
+                            <div class="relative m-10 right-16 text-white">Kria Whittle</div>
+                            <div class="relative right-6 bottom-10 text-white font-thin">Verified Graduate</div>
+                        </div>
+                    </div>
+                <div class="text-white mt-16 mr-12 ml-12 relative bottom-20 text-lg font-sans">
+    
+                    Such a life-changing experience. Highly recommended!
+                        
+                </div>
+    
+                <div class="text-white mt-24 mr-12 ml-12 -mb-20 relative bottom-36 font-thin font-alata">
+    
+    
+                    "Before joining the bootcamp, I've never written a line of code. I
+                    needed some structure from professionals who can help me learn
+                    programming step by step. I was encouraged to enroll by a former
+                    student of theirs who can only say wonderful things about the
+                    program. The entire curriculum and staff did not disappoint. They
+                    were very hands-on and I never had to wait long for assistance. The
+                    agile team project, in particular, was outstanding. It took my
+                    learning to the next level in a way that no tutorial could ever
+                    have. In fact, I've often referred to it during interviews as an
+                    example of my developent experience. It certainly helped me land a
+                    job as a full-stack developer after receiving multiple offers. 100%
+                    recommend!"    
+                  
+                </div> 
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-orange-500 flex flex-col justify-start items-start m-4 rounded-2xl min-h-96 xl:relative xl:ml-4 xl:mr-4 xl:-mt-24 xxl:relative xxl:ml-4 xxl:mr-4 xxl:-mt-5">
+                <div class="flex flex-col">
+                    <div class="flex flex-row">
+                        <div class="m-10"><img src="./images/image-kira.jpg" alt="" class="rounded-full"></div>
+                        <div class="flex flex-col">
+                            <div class="relative m-10 right-16 text-white">Kria Whittle</div>
+                            <div class="relative right-6 bottom-10 text-white font-thin">Verified Graduate</div>
+                        </div>
+                    </div>
+                <div class="text-white mt-16 mr-12 ml-12 relative bottom-20 text-lg font-sans">
+    
+                    Such a life-changing experience. Highly recommended!
+                        
+                </div>
+    
+                <div class="text-white mt-24 mr-12 ml-12 -mb-20 relative bottom-36 font-thin font-alata">
+    
+    
+                    "Before joining the bootcamp, I've never written a line of code. I
+                    needed some structure from professionals who can help me learn
+                    programming step by step. I was encouraged to enroll by a former
+                    student of theirs who can only say wonderful things about the
+                    program. The entire curriculum and staff did not disappoint. They
+                    were very hands-on and I never had to wait long for assistance. The
+                    agile team project, in particular, was outstanding. It took my
+                    learning to the next level in a way that no tutorial could ever
+                    have. In fact, I've often referred to it during interviews as an
+                    example of my developent experience. It certainly helped me land a
+                    job as a full-stack developer after receiving multiple offers. 100%
+                    recommend!"    
+                  
+                </div> 
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-blue-500 flex flex-col justify-start items-start m-3 rounded-2xl min-h-96 xl:relative xl:ml-4 xl:mr-4 xl:-mt-24 xxl:relative xxl:ml-4 xxl:mr-4 xxl:-mt-5">
+                <div class="flex flex-col">
+                    <div class="flex flex-row">
+                        <div class="m-10"><img src="./images/image-kira.jpg" alt="" class="rounded-full"></div>
+                        <div class="flex flex-col">
+                            <div class="relative m-10 right-16 text-white">Kria Whittle</div>
+                            <div class="relative right-6 bottom-10 text-white font-thin">Verified Graduate</div>
+                        </div>
+                    </div>
+                <div class="text-white mt-16 mr-12 ml-12 relative bottom-20 text-lg font-sans">
+    
+                    Such a life-changing experience. Highly recommended!
+                        
+                </div>
+    
+                <div class="text-white mt-24 mr-12 ml-12 -mb-20 relative bottom-36 font-thin font-alata">
+    
+    
+                    "Before joining the bootcamp, I've never written a line of code. I
+                    needed some structure from professionals who can help me learn
+                    programming step by step. I was encouraged to enroll by a former
+                    student of theirs who can only say wonderful things about the
+                    program. The entire curriculum and staff did not disappoint. They
+                    were very hands-on and I never had to wait long for assistance. The
+                    agile team project, in particular, was outstanding. It took my
+                    learning to the next level in a way that no tutorial could ever
+                    have. In fact, I've often referred to it during interviews as an
+                    example of my developent experience. It certainly helped me land a
+                    job as a full-stack developer after receiving multiple offers. 100%
+                    recommend!"    
+                  
+                </div> 
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer id="Support" class="bg-slate-800 m-4">
         <div class="flex flex-col gap-8 justify-center items-center p-8 md:flex md:flex-row md:gap-40">
-            <div class="md:relative md:right-24"><img src="../images/logo.svg" alt="" class="md:relative md:left-32 md:max-w-96"></div>
+            <div class="md:relative md:right-24"><img src="./images/logo.svg" alt="" class="md:relative md:left-32 md:max-w-96"></div>
             <div class="flex flex-col gap-4 md:flex md:flex-row md:gap-4 md:relative md:right-8 md:text-sm lg:flex lg:flex-row lg:gap-4 xl:flex xl:flex-row xl:gap-4 text-white">
                 <div class="">ABOUT</div>
                 <div class="">CAREERS</div>
